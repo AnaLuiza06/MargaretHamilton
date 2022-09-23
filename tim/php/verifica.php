@@ -1,34 +1,29 @@
 <?php  	
-/*
-  Verificar se existe um email enviado via POST
-*/
-	if(isset($_POST["email"])){
-    	$email = $_POST["email"];
-    	$senha = md5($_POST["senha"]);
-    	$perfil = $_POST["perfil"];
-    }
-	$conexao = mysqli_connect("localhost","root","","tim");
-	$sql = "SELECT * FROM CADASTRO WHERE EMAIL='$email' AND SENHA='$senha'";
 
-//Executar a instrução no banco
-  	$selecionado = mysqli_query($conexao, $sql);
-    
-//Verifica se selecionou 1 cliente
-  	if(mysqli_num_rows($selecionado)==1){
-//Transforma o selecionado em vetor
-  		$vetor = mysqli_fetch_row($selecionado);
-      
-      	$perfilBanco = $vetor[5];
-  		if ($perfilBanco == 1)
-  			header("Location:../html/index.html");
-    	else
-  			header("Location:../html/admin.html");
-    	//$vetorSelecionado = mysqli_fetch_row($selecionado);
-  	}
-  	else{
-  		 echo '<p>Usuário não encontrado</p>';
-  		 echo '<p><a href="../login.html">Voltar</a></p>';
-  	}
+	include ("./conexao.php");
+	// Puxando Dados
+	$email = $_POST['email'];
+	$senha = $_POST['senha'];
+	$status = $_POST['status'];
+
+	$consulta = mysqli_query($cn, "SELECT * FROM `cadastro` WHERE `email` = '$email' and `senha` = '$senha' and `status` = '$status'");
+	$exibe = mysqli_fetch_all($consulta, MYSQLI_ASSOC);
+
+    if(count($exibe) > 0){
+		if($status == 0){
+			// echo "<script>window.location='../html/cadastro.php?existe=true'</script>";
+			echo "Usuário";
+			session_start();
+		}
+		else if($status == 1){
+			// echo "<script>window.location='../html/cadastro.php?existe=true'</script>";
+			echo "adm";
+			session_start();
+		}
+    }
+    else{
+      echo "<script>window.location='../html/login.php?erro=true'</script>";
+    } 
 
 
 ?>
