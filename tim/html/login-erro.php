@@ -14,6 +14,23 @@
 	<body>
 		
 		<div class="container-login">
+		<?php
+			$erro = $_GET['erro'];
+
+			if($erro == "true"){
+				?>
+					<div class="msg-erro" style="display: block;">
+						<p>Email e/ou Senha Invalidos</p>
+					</div>
+				<?php
+			}else{
+				?>
+					<div class="msg-erro" style="display: none;">
+						<p>Email e/ou Senha Invalidos</p>
+					</div>
+				<?php
+			}
+		?>
 			<form class="form-login" action="../php/verifica.php" method="post">
 				<h2><span>Login</span></h2>
 				<div>

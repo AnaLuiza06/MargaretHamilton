@@ -18,6 +18,7 @@
       $sql = "INSERT INTO `cadastro`(`nome`, `email`, `senha`, `status`) VALUES ('$nome', '$email', '$senha', '$status')";
 		  // print_r($sql);
 		  $incluir = mysqli_query($cn, $sql);
+      echo "<script>window.location='../html/login.php'</script>";
     }  	    
   ?>
 

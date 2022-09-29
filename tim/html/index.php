@@ -100,47 +100,46 @@
 	<section id="obras">
 		<h2>Principais Obras</h2>
 		<div class="container-obras">
-			<button class="btn-carrosel"><</button>
 			<div class="cards-carrosel">
 				<div class="card active">
 					<div>
-						<button>Saiba Mais</button>
+						<button class="btn btn-light">Saiba Mais</button>
 					</div>
-					<img src="https://grupoautentica.com.br/img/capas/x/1472-20170329161351.jpg">
+					<img src="https://cdl-static.s3-sa-east-1.amazonaws.com/covers/gg/9788535918724/freud-1923-1925-o-eu-e-o-id-autobiografia-e-outros-textos.jpg">
 				</div>
 
 				<div class="card active">
 					<div>
-						<button>Saiba Mais</button>
+						<button class="btn btn-light">Saiba Mais</button>
 					</div>
-					<img src="https://grupoautentica.com.br/img/capas/x/1472-20170329161351.jpg">
+					<img src="http://d3ugyf2ht6aenh.cloudfront.net/stores/221/179/products/21120224901-894c650a512853ce5b15604350147393-640-0.jpg">
 				</div>
 
 				<div class="card active">
 					<div>
-						<button>Saiba Mais</button>
+						<button class="btn btn-light">Saiba Mais</button>
+					</div>
+					<img src="http://d3ugyf2ht6aenh.cloudfront.net/stores/221/179/products/14199_gg1-20f3fa1e1997b32a9715229515045035-640-0.jpg">
+				</div>
+
+				<div class="card">
+					<div>
+						<button class="btn btn-light">Saiba Mais</button>
 					</div>
 					<img src="https://grupoautentica.com.br/img/capas/x/1472-20170329161351.jpg">
 				</div>
 
 				<div class="card">
-					<div>						<button>Saiba Mais</button>
-					</div>
-					<img src="https://grupoautentica.com.br/img/capas/x/1472-20170329161351.jpg">
-				</div>
-
-				<div class="card">
 					<div>
-						<button>Saiba Mais</button>
+						<button class="btn btn-light">Saiba Mais</button>
 					</div>
 					<img src="https://grupoautentica.com.br/img/capas/x/1472-20170329161351.jpg">
 				</div>
 			</div>
-			<button class="btn-carrosel"><</button>
 		</div>
 	</section>
 
-	<section id="contato">
+	<!-- <section id="contato">
 		<h2>Entre em Contato</h2>
 			<form>
 				<div>
@@ -156,10 +155,10 @@
 					<textarea type="text" rows="6" cols="40" name="mensagem" placeholder="Digite sua mensagem" maxlength="100"></textarea>
 				</div>
 				<div class="btn-form">
-					<button>Enviar</button>
+					<button class="btn btn-light">Enviar</button>
 				</div>
 			</form>
-	</section>
+	</section> -->
 
 		<footer>
 		</footer>

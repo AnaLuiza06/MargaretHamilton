@@ -35,7 +35,7 @@
 					<input type="text" name="status" value="<?php echo $status;?>">
 				</div>
 				<div class="btn-form">
-					<button type="submit">Enviar</button>
+					<button type="submit" class="btn btn-light">Enviar</button>
 				</div>
 			</form>
 		</div>

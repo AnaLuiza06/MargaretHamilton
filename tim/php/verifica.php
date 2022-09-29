@@ -12,17 +12,17 @@
     if(count($exibe) > 0){
 		if($status == 0){
 			// echo "<script>window.location='../html/cadastro.php?existe=true'</script>";
-			echo "Usuário";
+			echo "<script>window.location='../html/index-user.php'</script>";
 			session_start();
 		}
 		else if($status == 1){
 			// echo "<script>window.location='../html/cadastro.php?existe=true'</script>";
-			echo "adm";
+			echo "<script>window.location='../html/index_adm.php'</script>";
 			session_start();
 		}
     }
     else{
-      echo "<script>window.location='../html/login.php?erro=true'</script>";
+      echo "<script>window.location='../html/login-erro.php?erro=true'</script>";
     } 
 
 
